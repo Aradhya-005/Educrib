@@ -9,7 +9,8 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
-dist
+# dist
+
 dist-ssr
 coverage
 *.local
@@ -28,3 +29,11 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+# Force add the dist folder
+git add -f dist
+
+# Commit the changes
+git commit -m "Include dist folder"
+
+# Push changes to remote repository
+git push origin main
